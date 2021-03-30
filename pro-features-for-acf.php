@@ -16,10 +16,10 @@ if(!class_exists("FreeAcfProFeatures")){
 
         function __construct()
         {
-            define("FREEACFPROFEATURES_URL", plugin_dir_url(__FILE__));
-            define("FREEACFPROFEATURES_PATH", plugin_dir_path(__FILE__));
-            define("FREEACFPROFEATURES_VERSION", "1.0.0");
-            define("FREEACFPROFEATURES_COMPONENTS_VERSION", "5.9.5");
+            defined("FREEACFPROFEATURES_URL") or define("FREEACFPROFEATURES_URL", plugin_dir_url(__FILE__));
+            defined("FREEACFPROFEATURES_PATH") or define("FREEACFPROFEATURES_PATH", plugin_dir_path(__FILE__));
+            defined("FREEACFPROFEATURES_VERSION") or define("FREEACFPROFEATURES_VERSION", "1.0.0");
+            defined("FREEACFPROFEATURES_COMPONENTS_VERSION") or define("FREEACFPROFEATURES_COMPONENTS_VERSION", "5.9.5");
 
             $this->plugin_init();
             $this->plugin_actions();
